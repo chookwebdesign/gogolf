@@ -129,6 +129,23 @@
     });
   }
 
+  /* ---- Testimonial carousel ---- */
+  const track = document.getElementById('testimonialTrack');
+  const prevBtn = document.getElementById('testimonialPrev');
+  const nextBtn = document.getElementById('testimonialNext');
+  if (track && prevBtn && nextBtn) {
+    let current = 0;
+    const cards = track.querySelectorAll('.testimonial-card');
+    const total = cards.length;
+    const slide = () => {
+      const cardWidth = cards[0].offsetWidth + 24;
+      track.style.transform = `translateX(-${current * cardWidth}px)`;
+    };
+    prevBtn.addEventListener('click', () => { current = (current - 1 + total) % total; slide(); });
+    nextBtn.addEventListener('click', () => { current = (current + 1) % total; slide(); });
+    window.addEventListener('resize', slide);
+  }
+
   /* ---- Smooth scroll for anchor links ---- */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
