@@ -142,34 +142,45 @@
   </div>
 
   <!-- ABOUT TEASER -->
-  <section class="section" aria-labelledby="home-about-heading" style="background:#fff;">
+  <section class="section about-section" aria-labelledby="home-about-heading">
+    <span class="bg-word bg-word--tl" aria-hidden="true">About</span>
     <div class="container">
       <div class="about-intro fade-up">
 
-        <div class="photo-placeholder">
-          <img src="sam-godward.jpg" alt="Sam Godward, GoGolf coach" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+        <div class="coach-photo-wrap">
+          <div class="photo-placeholder">
+            <img src="sam-godward.jpg" alt="Sam Godward, GoGolf coach" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+          </div>
+          <div class="coach-name-card">
+            <strong>Sam Godward</strong>
+            <span>NZGTF Certified Coach</span>
+          </div>
         </div>
 
         <div class="about-bio">
-          <span class="tag">Meet Your Coach</span>
+          <span class="tag tag-mint">Meet Your Coach</span>
           <h2 id="home-about-heading">Certified coach. Genuine passion for the game.</h2>
 
-          <p style="margin-top:.75rem;font-size:.9375rem;color:var(--text-muted);">Golf taught me patience, focus, and the quiet satisfaction of getting better at something. My mission is to give every school student in Auckland that same experience.</p>
-
-          <p style="margin-top:1rem;font-size:.9375rem;color:var(--text-muted);">As a fully qualified NZGTF Golf Teaching Professional, I coach in a way that meets kids where they are — no experience required, no pressure, just great fundamentals delivered in a way that's genuinely fun. In 2026 I became the Official Golf Coach at Auckland University, working with diverse groups that range from complete beginners to confident players.</p>
-
-          <p style="margin-top:1rem;font-size:.9375rem;color:var(--text-muted);">GoGolf exists because I believe every school student deserves access to the game. I bring the equipment, the structure, and the energy — your school just needs to say yes.</p>
-
-          <div class="credentials" style="margin-top:1.75rem;">
-            <div class="credential-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              NZGTF Certified Golf Teaching Professional
+          <div class="about-stats-row">
+            <div class="about-stat">
+              <span class="about-stat-value">NZGTF</span>
+              <span class="about-stat-label">Certified</span>
             </div>
-            <div class="credential-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-              Official Golf Coach — Auckland University (2026)
+            <div class="about-stat-divider" aria-hidden="true"></div>
+            <div class="about-stat">
+              <span class="about-stat-value">UOA</span>
+              <span class="about-stat-label">Coach</span>
+            </div>
+            <div class="about-stat-divider" aria-hidden="true"></div>
+            <div class="about-stat">
+              <span class="about-stat-value">North Shore</span>
+              <span class="about-stat-label">Auckland Based</span>
             </div>
           </div>
+
+          <p>Golf taught me patience, focus, and the quiet satisfaction of getting better at something. My mission is to give every school student in Auckland that same experience.</p>
+          <p>As a fully qualified NZGTF Golf Teaching Professional, I coach in a way that meets kids where they are — no experience required, no pressure, just great fundamentals delivered in a way that's genuinely fun. In 2026 I became the Official Golf Coach at Auckland University, working with diverse groups that range from complete beginners to confident players.</p>
+          <p>GoGolf exists because I believe every school student deserves access to the game. I bring the equipment, the structure, and the energy — your school just needs to say yes.</p>
 
           <div style="margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;">
             <a href="about.html" class="btn btn-primary">More About Sam</a>
@@ -182,7 +193,8 @@
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact" class="section" aria-labelledby="home-contact-heading" style="background:var(--bg-subtle);border-top:1px solid var(--border);">
+  <section id="contact" class="section" aria-labelledby="home-contact-heading" style="background:var(--bg-subtle);border-top:1px solid var(--border);position:relative;overflow:hidden;">
+    <span class="bg-word bg-word--tr bg-word--light" aria-hidden="true">Contact</span>
     <div class="container">
       <div class="section-header fade-up">
         <span class="tag">Let's Talk</span>
@@ -321,7 +333,8 @@
   <hr style="border:none;border-top:2px solid var(--border);margin:0;">
 
   <!-- BENEFITS -->
-  <section class="section benefits" aria-labelledby="benefits-heading" style="background:#fff;">
+  <section class="section benefits benefits-dark" aria-labelledby="benefits-heading" style="position:relative;overflow:hidden;">
+    <span class="bg-word bg-word--bl" aria-hidden="true">GoGolf</span>
     <div class="container">
       <div class="section-header fade-up">
         <span class="tag">Why GoGolf?</span>
@@ -343,10 +356,7 @@
           <h3>Progress From Day One</h3>
           <p>By focusing on chipping and putting, students experience real, visible improvement from their very first session. Quick wins build confidence and keep kids genuinely excited to return.</p>
         </div>
-        <div class="benefit-card benefit-card-image">
-          <img src="benefit-photo.png" alt="Students enjoying a GoGolf coaching session on school grounds" loading="lazy">
-        </div>
-        <div class="benefit-card">
+<div class="benefit-card">
           <div class="benefit-icon" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </div>
@@ -357,36 +367,6 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="section testimonials" aria-labelledby="testimonials-heading">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="tag">Reviews</span>
-        <h2 id="testimonials-heading">Hear from the schools we work with</h2>
-        <p>Real feedback from teachers, coordinators, and parents across Auckland.</p>
-      </div>
-      <div class="testimonial-placeholder fade-up" role="region" aria-label="Testimonials coming soon">
-        <div class="stars" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        </div>
-        <p><em>"Reviews coming soon — GoGolf is just getting started. Be one of the first schools to experience it and share your story."</em></p>
-      </div>
-
-      <div class="testimonial-arrows">
-        <button class="testimonial-arrow" aria-label="Previous review">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <button class="testimonial-arrow" aria-label="Next review">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-      </div>
-
-    </div>
-  </section>
 
   <!-- FAQ -->
   <section class="section" aria-labelledby="home-faq-heading" style="background:#fff;">
